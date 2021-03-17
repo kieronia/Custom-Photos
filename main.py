@@ -12,7 +12,7 @@ token = "token-here"
 print(f" > Usage : {prefix}photo [photo-url] or {prefix}other [photo-url]")
 links = ["https://discord.com","https://www.minecraft.net"] #add your links here or just add one if you want it to be the same everytime
 @photos.command()
-async def photo(ctx,photolink): #this way you can say "!photo [photo-url] on" or something and it'll choose a random link from your selection'
+async def photo(ctx,photolink): 
     await ctx.message.delete()
     randcolor = random.randint(0x000000, 0xFFFFFF)
     embed=discord.Embed(color=randcolor)
